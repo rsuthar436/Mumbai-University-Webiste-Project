@@ -1,0 +1,74 @@
+/* whole page styling */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* top menu styling */
+.top-menu{
+	background-color: #002147;
+	padding: 9px;
+}
+.top-menu ul{
+	list-style: none;
+	text-align: center;
+}
+.top-menu li{
+	display: inline-block;
+}
+.top-menu a{
+	margin-right: 4px;
+	margin-left: 4px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+.top-menu a:hover{
+	color: #fdc800;
+	text-decoration: underline #fdc800;
+	cursor: pointer;
+}
+.blink-text{
+	animation: blinker 1s linear infinite;
+}
+@keyframes blinker{
+	50%{
+		opacity: 0;
+	}
+}
+
+
+
+/* set styling for 1200px screen */
+@media only screen and (max-width: 1200px){
+	.top-menu a{
+		margin-right: 6px;
+		margin-left: 6px;
+		font-size: 22px;
+	}
+}
+
+/* set styling for 1000px screen */
+@media only screen and (max-width: 1200px){
+	.top-menu a{
+		font-size: 25px;
+	}
+}
+
+/* set styling for 800px screen */
+@media only screen and (max-width: 1200px){
+	.top-menu a{
+		margin-left: 8px;
+		margin-right: 8px;
+		font-size: 30px;
+	}
+}
+
+/* set styling for 400px screen */
+@media only screen and (max-width: 1200px){
+	.top-menu a{
+		font-size: 50px;
+	}
+}
